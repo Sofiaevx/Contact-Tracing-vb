@@ -295,9 +295,9 @@ Partial Class Questioner
         Me.Label5.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label5.Location = New System.Drawing.Point(14, 417)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(39, 20)
+        Me.Label5.Size = New System.Drawing.Size(86, 20)
         Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Age:"
+        Me.Label5.Text = "Sore Throat"
         '
         'Questioner
         '
