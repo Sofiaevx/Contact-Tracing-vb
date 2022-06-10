@@ -1,0 +1,17 @@
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.AssemblyReference.cache
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.ContactTracingForm.resources
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.GenerateResource.cache
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.AssemblyInfoInputs.cache
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.AssemblyInfo.vb
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.CoreCompileInputs.cache
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.exe
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.deps.json
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.runtimeconfig.json
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.dll
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.pdb
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.dll
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\refint\ContactTracingForm.dll
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.pdb
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.genruntimeconfig.cache
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ref\ContactTracingForm.dll
