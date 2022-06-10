@@ -48,7 +48,24 @@ Partial Class Questioner
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.FeverLabel = New System.Windows.Forms.Label()
         Me.Coughslabel = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.STLabel = New System.Windows.Forms.Label()
+        Me.No1 = New System.Windows.Forms.RadioButton()
+        Me.QuestionLabel = New System.Windows.Forms.Label()
+        Me.Yes1 = New System.Windows.Forms.RadioButton()
+        Me.Yes2 = New System.Windows.Forms.RadioButton()
+        Me.No2 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
+        Me.Yes3 = New System.Windows.Forms.RadioButton()
+        Me.No3 = New System.Windows.Forms.RadioButton()
+        Me.HeadacheLabel = New System.Windows.Forms.Label()
+        Me.Yes4 = New System.Windows.Forms.RadioButton()
+        Me.No4 = New System.Windows.Forms.RadioButton()
+        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.GroupBox1.SuspendLayout()
+        Me.GroupBox2.SuspendLayout()
+        Me.GroupBox3.SuspendLayout()
+        Me.GroupBox4.SuspendLayout()
         Me.SuspendLayout()
         '
         'LNTextbox
@@ -262,18 +279,19 @@ Partial Class Questioner
         '
         'GroupBox1
         '
-        Me.GroupBox1.Location = New System.Drawing.Point(259, 347)
+        Me.GroupBox1.Controls.Add(Me.Yes1)
+        Me.GroupBox1.Controls.Add(Me.No1)
+        Me.GroupBox1.Location = New System.Drawing.Point(138, 358)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(67, 28)
+        Me.GroupBox1.Size = New System.Drawing.Size(99, 33)
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
         '
         'FeverLabel
         '
         Me.FeverLabel.AutoSize = True
         Me.FeverLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.FeverLabel.Location = New System.Drawing.Point(15, 355)
+        Me.FeverLabel.Location = New System.Drawing.Point(85, 369)
         Me.FeverLabel.Name = "FeverLabel"
         Me.FeverLabel.Size = New System.Drawing.Size(47, 20)
         Me.FeverLabel.TabIndex = 24
@@ -283,21 +301,163 @@ Partial Class Questioner
         '
         Me.Coughslabel.AutoSize = True
         Me.Coughslabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Coughslabel.Location = New System.Drawing.Point(15, 386)
+        Me.Coughslabel.Location = New System.Drawing.Point(73, 406)
         Me.Coughslabel.Name = "Coughslabel"
-        Me.Coughslabel.Size = New System.Drawing.Size(58, 20)
+        Me.Coughslabel.Size = New System.Drawing.Size(61, 20)
         Me.Coughslabel.TabIndex = 25
-        Me.Coughslabel.Text = "Coughs"
+        Me.Coughslabel.Text = "Coughs:"
         '
-        'Label5
+        'STLabel
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label5.Location = New System.Drawing.Point(14, 417)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(86, 20)
-        Me.Label5.TabIndex = 26
-        Me.Label5.Text = "Sore Throat"
+        Me.STLabel.AutoSize = True
+        Me.STLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.STLabel.Location = New System.Drawing.Point(47, 444)
+        Me.STLabel.Name = "STLabel"
+        Me.STLabel.Size = New System.Drawing.Size(89, 20)
+        Me.STLabel.TabIndex = 26
+        Me.STLabel.Text = "Sore Throat:"
+        '
+        'No1
+        '
+        Me.No1.AutoSize = True
+        Me.No1.BackColor = System.Drawing.Color.Transparent
+        Me.No1.Location = New System.Drawing.Point(4, 10)
+        Me.No1.Name = "No1"
+        Me.No1.Size = New System.Drawing.Size(41, 19)
+        Me.No1.TabIndex = 27
+        Me.No1.TabStop = True
+        Me.No1.Text = "No"
+        Me.No1.UseVisualStyleBackColor = False
+        '
+        'QuestionLabel
+        '
+        Me.QuestionLabel.AutoSize = True
+        Me.QuestionLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.QuestionLabel.Location = New System.Drawing.Point(15, 337)
+        Me.QuestionLabel.Name = "QuestionLabel"
+        Me.QuestionLabel.Size = New System.Drawing.Size(238, 16)
+        Me.QuestionLabel.TabIndex = 28
+        Me.QuestionLabel.Text = "Do you experience any of the ff. symptoms?"
+        '
+        'Yes1
+        '
+        Me.Yes1.AutoSize = True
+        Me.Yes1.BackColor = System.Drawing.Color.Transparent
+        Me.Yes1.Location = New System.Drawing.Point(52, 10)
+        Me.Yes1.Name = "Yes1"
+        Me.Yes1.Size = New System.Drawing.Size(42, 19)
+        Me.Yes1.TabIndex = 28
+        Me.Yes1.TabStop = True
+        Me.Yes1.Text = "Yes"
+        Me.Yes1.UseVisualStyleBackColor = False
+        '
+        'Yes2
+        '
+        Me.Yes2.AutoSize = True
+        Me.Yes2.Location = New System.Drawing.Point(52, 11)
+        Me.Yes2.Name = "Yes2"
+        Me.Yes2.Size = New System.Drawing.Size(42, 19)
+        Me.Yes2.TabIndex = 28
+        Me.Yes2.TabStop = True
+        Me.Yes2.Text = "Yes"
+        Me.Yes2.UseVisualStyleBackColor = True
+        '
+        'No2
+        '
+        Me.No2.AutoSize = True
+        Me.No2.Location = New System.Drawing.Point(4, 11)
+        Me.No2.Name = "No2"
+        Me.No2.Size = New System.Drawing.Size(41, 19)
+        Me.No2.TabIndex = 27
+        Me.No2.TabStop = True
+        Me.No2.Text = "No"
+        Me.No2.UseVisualStyleBackColor = True
+        '
+        'GroupBox2
+        '
+        Me.GroupBox2.Controls.Add(Me.Yes2)
+        Me.GroupBox2.Controls.Add(Me.No2)
+        Me.GroupBox2.Location = New System.Drawing.Point(139, 397)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(99, 33)
+        Me.GroupBox2.TabIndex = 29
+        Me.GroupBox2.TabStop = False
+        '
+        'GroupBox3
+        '
+        Me.GroupBox3.Controls.Add(Me.Yes3)
+        Me.GroupBox3.Controls.Add(Me.No3)
+        Me.GroupBox3.Location = New System.Drawing.Point(139, 435)
+        Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(99, 33)
+        Me.GroupBox3.TabIndex = 30
+        Me.GroupBox3.TabStop = False
+        '
+        'Yes3
+        '
+        Me.Yes3.AutoSize = True
+        Me.Yes3.Location = New System.Drawing.Point(52, 11)
+        Me.Yes3.Name = "Yes3"
+        Me.Yes3.Size = New System.Drawing.Size(42, 19)
+        Me.Yes3.TabIndex = 28
+        Me.Yes3.TabStop = True
+        Me.Yes3.Text = "Yes"
+        Me.Yes3.UseVisualStyleBackColor = True
+        '
+        'No3
+        '
+        Me.No3.AutoSize = True
+        Me.No3.Location = New System.Drawing.Point(4, 11)
+        Me.No3.Name = "No3"
+        Me.No3.Size = New System.Drawing.Size(41, 19)
+        Me.No3.TabIndex = 27
+        Me.No3.TabStop = True
+        Me.No3.Text = "No"
+        Me.No3.UseVisualStyleBackColor = True
+        '
+        'HeadacheLabel
+        '
+        Me.HeadacheLabel.AutoSize = True
+        Me.HeadacheLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.HeadacheLabel.Location = New System.Drawing.Point(304, 369)
+        Me.HeadacheLabel.Name = "HeadacheLabel"
+        Me.HeadacheLabel.Size = New System.Drawing.Size(79, 20)
+        Me.HeadacheLabel.TabIndex = 31
+        Me.HeadacheLabel.Text = "Headache:"
+        '
+        'Yes4
+        '
+        Me.Yes4.AutoSize = True
+        Me.Yes4.BackColor = System.Drawing.Color.Transparent
+        Me.Yes4.Location = New System.Drawing.Point(52, 10)
+        Me.Yes4.Name = "Yes4"
+        Me.Yes4.Size = New System.Drawing.Size(42, 19)
+        Me.Yes4.TabIndex = 28
+        Me.Yes4.TabStop = True
+        Me.Yes4.Text = "Yes"
+        Me.Yes4.UseVisualStyleBackColor = False
+        '
+        'No4
+        '
+        Me.No4.AutoSize = True
+        Me.No4.BackColor = System.Drawing.Color.Transparent
+        Me.No4.Location = New System.Drawing.Point(4, 10)
+        Me.No4.Name = "No4"
+        Me.No4.Size = New System.Drawing.Size(41, 19)
+        Me.No4.TabIndex = 27
+        Me.No4.TabStop = True
+        Me.No4.Text = "No"
+        Me.No4.UseVisualStyleBackColor = False
+        '
+        'GroupBox4
+        '
+        Me.GroupBox4.Controls.Add(Me.Yes4)
+        Me.GroupBox4.Controls.Add(Me.No4)
+        Me.GroupBox4.Location = New System.Drawing.Point(389, 358)
+        Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(99, 33)
+        Me.GroupBox4.TabIndex = 29
+        Me.GroupBox4.TabStop = False
         '
         'Questioner
         '
@@ -305,7 +465,12 @@ Partial Class Questioner
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(790, 527)
-        Me.Controls.Add(Me.Label5)
+        Me.Controls.Add(Me.GroupBox4)
+        Me.Controls.Add(Me.HeadacheLabel)
+        Me.Controls.Add(Me.GroupBox3)
+        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.QuestionLabel)
+        Me.Controls.Add(Me.STLabel)
         Me.Controls.Add(Me.Coughslabel)
         Me.Controls.Add(Me.FeverLabel)
         Me.Controls.Add(Me.GroupBox1)
@@ -336,6 +501,14 @@ Partial Class Questioner
         Me.MinimizeBox = False
         Me.Name = "Questioner"
         Me.Text = "Questioner"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
+        Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
+        Me.GroupBox3.ResumeLayout(False)
+        Me.GroupBox3.PerformLayout()
+        Me.GroupBox4.ResumeLayout(False)
+        Me.GroupBox4.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -367,5 +540,18 @@ Partial Class Questioner
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents FeverLabel As Label
     Friend WithEvents Coughslabel As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents STLabel As Label
+    Friend WithEvents Yes1 As RadioButton
+    Friend WithEvents No1 As RadioButton
+    Friend WithEvents QuestionLabel As Label
+    Friend WithEvents Yes2 As RadioButton
+    Friend WithEvents No2 As RadioButton
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents GroupBox3 As GroupBox
+    Friend WithEvents Yes3 As RadioButton
+    Friend WithEvents No3 As RadioButton
+    Friend WithEvents HeadacheLabel As Label
+    Friend WithEvents Yes4 As RadioButton
+    Friend WithEvents No4 As RadioButton
+    Friend WithEvents GroupBox4 As GroupBox
 End Class
