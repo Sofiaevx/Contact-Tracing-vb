@@ -113,7 +113,7 @@ Partial Class ContactTracingForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(792, 376)
+        Me.ClientSize = New System.Drawing.Size(790, 376)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Info4)
         Me.Controls.Add(Me.Info2)
@@ -122,6 +122,7 @@ Partial Class ContactTracingForm
         Me.Controls.Add(Me.Panel1)
         Me.ForeColor = System.Drawing.Color.Black
         Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "ContactTracingForm"
         Me.Text = "Contact Tracing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

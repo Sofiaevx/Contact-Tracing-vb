@@ -16,3 +16,4 @@ C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\Con
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.genruntimeconfig.cache
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ref\ContactTracingForm.dll
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Resources.resources
+C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Questioner.resources
