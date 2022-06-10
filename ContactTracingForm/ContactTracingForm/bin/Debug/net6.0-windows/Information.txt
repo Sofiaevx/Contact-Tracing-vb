@@ -1,0 +1,14 @@
+﻿Fullname: asd, dsf g.
+Age: 
+Sex: Female
+Birthday: 10/06/2022 4:30:24 pm
+Contact Number: 
+Address: 
+Email: 
+Fever: Yes
+Coughs: Yes
+Sore Throat: Yes
+Headache: Yes
+Were you previously exposed to a known positive COVID-19 person? Yes
+Date: 10/06/2022 4:30:24 pm
+Previously exposed to whom? qwerty, asas dada

@@ -22,6 +22,7 @@ Partial Class Questioner
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.LNTextbox = New System.Windows.Forms.TextBox()
         Me.NameLabel = New System.Windows.Forms.Label()
         Me.FNTextbox = New System.Windows.Forms.TextBox()
@@ -46,12 +47,12 @@ Partial Class Questioner
         Me.SymptomsLabel = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Yes1 = New System.Windows.Forms.RadioButton()
+        Me.No1 = New System.Windows.Forms.RadioButton()
         Me.FeverLabel = New System.Windows.Forms.Label()
         Me.Coughslabel = New System.Windows.Forms.Label()
         Me.STLabel = New System.Windows.Forms.Label()
-        Me.No1 = New System.Windows.Forms.RadioButton()
         Me.QuestionLabel = New System.Windows.Forms.Label()
-        Me.Yes1 = New System.Windows.Forms.RadioButton()
         Me.Yes2 = New System.Windows.Forms.RadioButton()
         Me.No2 = New System.Windows.Forms.RadioButton()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
@@ -62,16 +63,16 @@ Partial Class Questioner
         Me.Yes4 = New System.Windows.Forms.RadioButton()
         Me.No4 = New System.Windows.Forms.RadioButton()
         Me.GroupBox4 = New System.Windows.Forms.GroupBox()
-        Me.Question1Label = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Question2Label = New System.Windows.Forms.Label()
+        Me.Q2Label = New System.Windows.Forms.Label()
         Me.Yes5 = New System.Windows.Forms.RadioButton()
         Me.No5 = New System.Windows.Forms.RadioButton()
         Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
+        Me.DatePicker = New System.Windows.Forms.DateTimePicker()
         Me.DateLabel = New System.Windows.Forms.Label()
         Me.Question3Label = New System.Windows.Forms.Label()
         Me.SubmitBtn = New System.Windows.Forms.Button()
-        Me.DateTimePicker2 = New System.Windows.Forms.DateTimePicker()
+        Me.BirthdayPicker = New System.Windows.Forms.DateTimePicker()
         Me.GroupBox6 = New System.Windows.Forms.GroupBox()
         Me.FemaleRbtn = New System.Windows.Forms.RadioButton()
         Me.MaleRbtn = New System.Windows.Forms.RadioButton()
@@ -81,6 +82,7 @@ Partial Class Questioner
         Me.Q3MNTextbox = New System.Windows.Forms.TextBox()
         Me.Q3FNTextbox = New System.Windows.Forms.TextBox()
         Me.Q3LNTextbox = New System.Windows.Forms.TextBox()
+        Me.TimerUpdate = New System.Windows.Forms.Timer(Me.components)
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.GroupBox3.SuspendLayout()
@@ -308,6 +310,30 @@ Partial Class Questioner
         Me.GroupBox1.TabIndex = 23
         Me.GroupBox1.TabStop = False
         '
+        'Yes1
+        '
+        Me.Yes1.AutoSize = True
+        Me.Yes1.BackColor = System.Drawing.Color.Transparent
+        Me.Yes1.Location = New System.Drawing.Point(52, 11)
+        Me.Yes1.Name = "Yes1"
+        Me.Yes1.Size = New System.Drawing.Size(42, 19)
+        Me.Yes1.TabIndex = 28
+        Me.Yes1.Text = "Yes"
+        Me.Yes1.UseVisualStyleBackColor = False
+        '
+        'No1
+        '
+        Me.No1.AutoSize = True
+        Me.No1.BackColor = System.Drawing.Color.Transparent
+        Me.No1.Checked = True
+        Me.No1.Location = New System.Drawing.Point(4, 11)
+        Me.No1.Name = "No1"
+        Me.No1.Size = New System.Drawing.Size(41, 19)
+        Me.No1.TabIndex = 27
+        Me.No1.TabStop = True
+        Me.No1.Text = "No"
+        Me.No1.UseVisualStyleBackColor = False
+        '
         'FeverLabel
         '
         Me.FeverLabel.AutoSize = True
@@ -332,24 +358,11 @@ Partial Class Questioner
         '
         Me.STLabel.AutoSize = True
         Me.STLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.STLabel.Location = New System.Drawing.Point(131, 436)
+        Me.STLabel.Location = New System.Drawing.Point(361, 363)
         Me.STLabel.Name = "STLabel"
         Me.STLabel.Size = New System.Drawing.Size(89, 20)
         Me.STLabel.TabIndex = 26
         Me.STLabel.Text = "Sore Throat:"
-        '
-        'No1
-        '
-        Me.No1.AutoSize = True
-        Me.No1.BackColor = System.Drawing.Color.Transparent
-        Me.No1.Checked = True
-        Me.No1.Location = New System.Drawing.Point(4, 11)
-        Me.No1.Name = "No1"
-        Me.No1.Size = New System.Drawing.Size(41, 19)
-        Me.No1.TabIndex = 27
-        Me.No1.TabStop = True
-        Me.No1.Text = "No"
-        Me.No1.UseVisualStyleBackColor = False
         '
         'QuestionLabel
         '
@@ -360,17 +373,6 @@ Partial Class Questioner
         Me.QuestionLabel.Size = New System.Drawing.Size(238, 16)
         Me.QuestionLabel.TabIndex = 28
         Me.QuestionLabel.Text = "Do you experience any of the ff. symptoms?"
-        '
-        'Yes1
-        '
-        Me.Yes1.AutoSize = True
-        Me.Yes1.BackColor = System.Drawing.Color.Transparent
-        Me.Yes1.Location = New System.Drawing.Point(52, 11)
-        Me.Yes1.Name = "Yes1"
-        Me.Yes1.Size = New System.Drawing.Size(42, 19)
-        Me.Yes1.TabIndex = 28
-        Me.Yes1.Text = "Yes"
-        Me.Yes1.UseVisualStyleBackColor = False
         '
         'Yes2
         '
@@ -408,7 +410,7 @@ Partial Class Questioner
         '
         Me.GroupBox3.Controls.Add(Me.Yes3)
         Me.GroupBox3.Controls.Add(Me.No3)
-        Me.GroupBox3.Location = New System.Drawing.Point(223, 427)
+        Me.GroupBox3.Location = New System.Drawing.Point(453, 354)
         Me.GroupBox3.Name = "GroupBox3"
         Me.GroupBox3.Size = New System.Drawing.Size(99, 33)
         Me.GroupBox3.TabIndex = 30
@@ -440,7 +442,7 @@ Partial Class Questioner
         '
         Me.HeadacheLabel.AutoSize = True
         Me.HeadacheLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.HeadacheLabel.Location = New System.Drawing.Point(137, 475)
+        Me.HeadacheLabel.Location = New System.Drawing.Point(367, 402)
         Me.HeadacheLabel.Name = "HeadacheLabel"
         Me.HeadacheLabel.Size = New System.Drawing.Size(79, 20)
         Me.HeadacheLabel.TabIndex = 31
@@ -474,31 +476,31 @@ Partial Class Questioner
         '
         Me.GroupBox4.Controls.Add(Me.Yes4)
         Me.GroupBox4.Controls.Add(Me.No4)
-        Me.GroupBox4.Location = New System.Drawing.Point(222, 464)
+        Me.GroupBox4.Location = New System.Drawing.Point(452, 391)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Size = New System.Drawing.Size(99, 33)
         Me.GroupBox4.TabIndex = 29
         Me.GroupBox4.TabStop = False
         '
-        'Question1Label
+        'Question2Label
         '
-        Me.Question1Label.AutoSize = True
-        Me.Question1Label.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Question1Label.Location = New System.Drawing.Point(63, 516)
-        Me.Question1Label.Name = "Question1Label"
-        Me.Question1Label.Size = New System.Drawing.Size(462, 20)
-        Me.Question1Label.TabIndex = 32
-        Me.Question1Label.Text = "Were you previously exposed to a known positive COVID-19 person?"
+        Me.Question2Label.AutoSize = True
+        Me.Question2Label.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Question2Label.Location = New System.Drawing.Point(90, 448)
+        Me.Question2Label.Name = "Question2Label"
+        Me.Question2Label.Size = New System.Drawing.Size(462, 20)
+        Me.Question2Label.TabIndex = 32
+        Me.Question2Label.Text = "Were you previously exposed to a known positive COVID-19 person?"
         '
-        'Label3
+        'Q2Label
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Label3.Location = New System.Drawing.Point(71, 547)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(379, 16)
-        Me.Label3.TabIndex = 34
-        Me.Label3.Text = "If yes, please provide the date and who you were previously exposed to"
+        Me.Q2Label.AutoSize = True
+        Me.Q2Label.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.Q2Label.Location = New System.Drawing.Point(98, 479)
+        Me.Q2Label.Name = "Q2Label"
+        Me.Q2Label.Size = New System.Drawing.Size(379, 16)
+        Me.Q2Label.TabIndex = 34
+        Me.Q2Label.Text = "If yes, please provide the date and who you were previously exposed to"
         '
         'Yes5
         '
@@ -528,24 +530,24 @@ Partial Class Questioner
         '
         Me.GroupBox5.Controls.Add(Me.Yes5)
         Me.GroupBox5.Controls.Add(Me.No5)
-        Me.GroupBox5.Location = New System.Drawing.Point(532, 505)
+        Me.GroupBox5.Location = New System.Drawing.Point(559, 437)
         Me.GroupBox5.Name = "GroupBox5"
         Me.GroupBox5.Size = New System.Drawing.Size(99, 33)
         Me.GroupBox5.TabIndex = 29
         Me.GroupBox5.TabStop = False
         '
-        'DateTimePicker1
+        'DatePicker
         '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(214, 578)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 23)
-        Me.DateTimePicker1.TabIndex = 35
+        Me.DatePicker.Location = New System.Drawing.Point(241, 510)
+        Me.DatePicker.Name = "DatePicker"
+        Me.DatePicker.Size = New System.Drawing.Size(200, 23)
+        Me.DatePicker.TabIndex = 35
         '
         'DateLabel
         '
         Me.DateLabel.AutoSize = True
         Me.DateLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.DateLabel.Location = New System.Drawing.Point(164, 581)
+        Me.DateLabel.Location = New System.Drawing.Point(191, 513)
         Me.DateLabel.Name = "DateLabel"
         Me.DateLabel.Size = New System.Drawing.Size(44, 20)
         Me.DateLabel.TabIndex = 36
@@ -555,7 +557,7 @@ Partial Class Questioner
         '
         Me.Question3Label.AutoSize = True
         Me.Question3Label.Font = New System.Drawing.Font("Segoe UI Emoji", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Question3Label.Location = New System.Drawing.Point(12, 608)
+        Me.Question3Label.Location = New System.Drawing.Point(39, 540)
         Me.Question3Label.Name = "Question3Label"
         Me.Question3Label.Size = New System.Drawing.Size(205, 20)
         Me.Question3Label.TabIndex = 37
@@ -563,19 +565,19 @@ Partial Class Questioner
         '
         'SubmitBtn
         '
-        Me.SubmitBtn.Location = New System.Drawing.Point(626, 665)
+        Me.SubmitBtn.Location = New System.Drawing.Point(317, 474)
         Me.SubmitBtn.Name = "SubmitBtn"
         Me.SubmitBtn.Size = New System.Drawing.Size(99, 27)
         Me.SubmitBtn.TabIndex = 38
         Me.SubmitBtn.Text = "Submit"
         Me.SubmitBtn.UseVisualStyleBackColor = True
         '
-        'DateTimePicker2
+        'BirthdayPicker
         '
-        Me.DateTimePicker2.Location = New System.Drawing.Point(241, 131)
-        Me.DateTimePicker2.Name = "DateTimePicker2"
-        Me.DateTimePicker2.Size = New System.Drawing.Size(200, 23)
-        Me.DateTimePicker2.TabIndex = 39
+        Me.BirthdayPicker.Location = New System.Drawing.Point(241, 131)
+        Me.BirthdayPicker.Name = "BirthdayPicker"
+        Me.BirthdayPicker.Size = New System.Drawing.Size(200, 23)
+        Me.BirthdayPicker.TabIndex = 39
         '
         'GroupBox6
         '
@@ -615,7 +617,7 @@ Partial Class Questioner
         '
         Me.Q3MNLabel.AutoSize = True
         Me.Q3MNLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Q3MNLabel.Location = New System.Drawing.Point(496, 631)
+        Me.Q3MNLabel.Location = New System.Drawing.Point(523, 563)
         Me.Q3MNLabel.Name = "Q3MNLabel"
         Me.Q3MNLabel.Size = New System.Drawing.Size(79, 16)
         Me.Q3MNLabel.TabIndex = 45
@@ -625,7 +627,7 @@ Partial Class Questioner
         '
         Me.Q3FNLabel.AutoSize = True
         Me.Q3FNLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Q3FNLabel.Location = New System.Drawing.Point(355, 631)
+        Me.Q3FNLabel.Location = New System.Drawing.Point(382, 563)
         Me.Q3FNLabel.Name = "Q3FNLabel"
         Me.Q3FNLabel.Size = New System.Drawing.Size(64, 16)
         Me.Q3FNLabel.TabIndex = 44
@@ -635,7 +637,7 @@ Partial Class Questioner
         '
         Me.Q3LNLabel.AutoSize = True
         Me.Q3LNLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.Q3LNLabel.Location = New System.Drawing.Point(214, 631)
+        Me.Q3LNLabel.Location = New System.Drawing.Point(241, 563)
         Me.Q3LNLabel.Name = "Q3LNLabel"
         Me.Q3LNLabel.Size = New System.Drawing.Size(63, 16)
         Me.Q3LNLabel.TabIndex = 43
@@ -643,31 +645,35 @@ Partial Class Questioner
         '
         'Q3MNTextbox
         '
-        Me.Q3MNTextbox.Location = New System.Drawing.Point(496, 605)
+        Me.Q3MNTextbox.Location = New System.Drawing.Point(523, 537)
         Me.Q3MNTextbox.Name = "Q3MNTextbox"
         Me.Q3MNTextbox.Size = New System.Drawing.Size(76, 23)
         Me.Q3MNTextbox.TabIndex = 42
         '
         'Q3FNTextbox
         '
-        Me.Q3FNTextbox.Location = New System.Drawing.Point(355, 605)
+        Me.Q3FNTextbox.Location = New System.Drawing.Point(382, 537)
         Me.Q3FNTextbox.Name = "Q3FNTextbox"
         Me.Q3FNTextbox.Size = New System.Drawing.Size(135, 23)
         Me.Q3FNTextbox.TabIndex = 41
         '
         'Q3LNTextbox
         '
-        Me.Q3LNTextbox.Location = New System.Drawing.Point(214, 605)
+        Me.Q3LNTextbox.Location = New System.Drawing.Point(241, 537)
         Me.Q3LNTextbox.Name = "Q3LNTextbox"
         Me.Q3LNTextbox.Size = New System.Drawing.Size(135, 23)
         Me.Q3LNTextbox.TabIndex = 40
+        '
+        'TimerUpdate
+        '
+        Me.TimerUpdate.Enabled = True
         '
         'Questioner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(747, 704)
+        Me.ClientSize = New System.Drawing.Size(747, 505)
         Me.Controls.Add(Me.Q3MNLabel)
         Me.Controls.Add(Me.Q3FNLabel)
         Me.Controls.Add(Me.Q3LNLabel)
@@ -675,14 +681,14 @@ Partial Class Questioner
         Me.Controls.Add(Me.Q3FNTextbox)
         Me.Controls.Add(Me.Q3LNTextbox)
         Me.Controls.Add(Me.GroupBox6)
-        Me.Controls.Add(Me.DateTimePicker2)
+        Me.Controls.Add(Me.BirthdayPicker)
         Me.Controls.Add(Me.SubmitBtn)
         Me.Controls.Add(Me.Question3Label)
         Me.Controls.Add(Me.DateLabel)
-        Me.Controls.Add(Me.DateTimePicker1)
+        Me.Controls.Add(Me.DatePicker)
         Me.Controls.Add(Me.GroupBox5)
-        Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.Question1Label)
+        Me.Controls.Add(Me.Q2Label)
+        Me.Controls.Add(Me.Question2Label)
         Me.Controls.Add(Me.GroupBox4)
         Me.Controls.Add(Me.HeadacheLabel)
         Me.Controls.Add(Me.GroupBox3)
@@ -718,6 +724,7 @@ Partial Class Questioner
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "Questioner"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Questioner"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -776,16 +783,16 @@ Partial Class Questioner
     Friend WithEvents Yes4 As RadioButton
     Friend WithEvents No4 As RadioButton
     Friend WithEvents GroupBox4 As GroupBox
-    Friend WithEvents Question1Label As Label
-    Friend WithEvents Label3 As Label
+    Friend WithEvents Question2Label As Label
+    Friend WithEvents Q2Label As Label
     Friend WithEvents Yes5 As RadioButton
     Friend WithEvents No5 As RadioButton
     Friend WithEvents GroupBox5 As GroupBox
-    Friend WithEvents DateTimePicker1 As DateTimePicker
+    Friend WithEvents DatePicker As DateTimePicker
     Friend WithEvents DateLabel As Label
     Friend WithEvents Question3Label As Label
     Friend WithEvents SubmitBtn As Button
-    Friend WithEvents DateTimePicker2 As DateTimePicker
+    Friend WithEvents BirthdayPicker As DateTimePicker
     Friend WithEvents GroupBox6 As GroupBox
     Friend WithEvents FemaleRbtn As RadioButton
     Friend WithEvents MaleRbtn As RadioButton
@@ -795,4 +802,5 @@ Partial Class Questioner
     Friend WithEvents Q3MNTextbox As TextBox
     Friend WithEvents Q3FNTextbox As TextBox
     Friend WithEvents Q3LNTextbox As TextBox
+    Friend WithEvents TimerUpdate As Timer
 End Class

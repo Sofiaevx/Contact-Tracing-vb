@@ -124,6 +124,7 @@ Partial Class ContactTracingForm
         Me.MaximizeBox = False
         Me.MinimizeBox = False
         Me.Name = "ContactTracingForm"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Contact Tracing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
