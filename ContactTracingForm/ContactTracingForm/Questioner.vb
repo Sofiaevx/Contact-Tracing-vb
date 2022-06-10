@@ -2,6 +2,7 @@
 Public Class Questioner
     Dim InfoTxtFile As StreamWriter = My.Computer.FileSystem.OpenTextFileWriter("Information.txt", True)
     Private Sub SubmitBtn_Click(sender As Object, e As EventArgs) Handles SubmitBtn.Click
+        'This block of codes is the user's personal information and will be added in the txtfile once the user click the submit button
         InfoTxtFile.WriteLine("********************************************")
         InfoTxtFile.WriteLine(vbCrLf + "Fullname: " + LNTextbox.Text + ", " + FNTextbox.Text + " " + MNTextbox.Text + ".")
         InfoTxtFile.WriteLine("Age: " + AgeTextbox.Text)
@@ -14,18 +15,13 @@ Public Class Questioner
         InfoTxtFile.WriteLine("Contact Number: " + CNTextbox.Text)
         InfoTxtFile.WriteLine("Address: " + AddressTextbox.Text)
         InfoTxtFile.WriteLine("Email: " + EmailTextbox.Text + vbCrLf)
-
         rbtnvalue(No1, FeverLabel)
         rbtnvalue(No2, Coughslabel)
         rbtnvalue(No3, STLabel)
         rbtnvalue(No4, HeadacheLabel)
         rbtnvalue(No5, Question2Label)
-
-
         If Not No5.Checked Then
-
             InfoTxtFile.WriteLine("Date: " + DatePicker.Value)
-
             InfoTxtFile.WriteLine(Question3Label.Text + " " + Q3LNTextbox.Text + ", " + Q3FNTextbox.Text + " " + Q3MNTextbox.Text)
         End If
         InfoTxtFile.Close()
