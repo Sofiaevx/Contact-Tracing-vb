@@ -26,6 +26,7 @@ Partial Class QRCode_Scanner
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ScanBtn = New System.Windows.Forms.Button()
         Me.HomeBtn = New System.Windows.Forms.Button()
+        Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -65,12 +66,22 @@ Partial Class QRCode_Scanner
         Me.HomeBtn.Text = "Home"
         Me.HomeBtn.UseVisualStyleBackColor = True
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Location = New System.Drawing.Point(94, 20)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(90, 15)
+        Me.Label1.TabIndex = 4
+        Me.Label1.Text = "Contact Tracing"
+        '
         'QRCode_Scanner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.HomeBtn)
         Me.Controls.Add(Me.ScanBtn)
         Me.Controls.Add(Me.RichTextBox1)
@@ -79,6 +90,7 @@ Partial Class QRCode_Scanner
         Me.Text = "QRCode_Scanner"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -86,4 +98,5 @@ Partial Class QRCode_Scanner
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents ScanBtn As Button
     Friend WithEvents HomeBtn As Button
+    Friend WithEvents Label1 As Label
 End Class
