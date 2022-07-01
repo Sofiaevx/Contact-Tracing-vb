@@ -29,9 +29,9 @@ Partial Class ContactTracingForm
         Me.Info4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.QRLabel = New System.Windows.Forms.Label()
         Me.QRBtn = New System.Windows.Forms.Button()
         Me.NextBtn = New System.Windows.Forms.Button()
-        Me.QRLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -101,6 +101,17 @@ Partial Class ContactTracingForm
         Me.Panel1.Size = New System.Drawing.Size(740, 332)
         Me.Panel1.TabIndex = 5
         '
+        'QRLabel
+        '
+        Me.QRLabel.AutoSize = True
+        Me.QRLabel.BackColor = System.Drawing.Color.Transparent
+        Me.QRLabel.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.QRLabel.Location = New System.Drawing.Point(510, 319)
+        Me.QRLabel.Name = "QRLabel"
+        Me.QRLabel.Size = New System.Drawing.Size(134, 13)
+        Me.QRLabel.TabIndex = 2
+        Me.QRLabel.Text = "Already have a QR Code?"
+        '
         'QRBtn
         '
         Me.QRBtn.BackColor = System.Drawing.SystemColors.ActiveCaption
@@ -109,6 +120,7 @@ Partial Class ContactTracingForm
         Me.QRBtn.Name = "QRBtn"
         Me.QRBtn.Size = New System.Drawing.Size(94, 26)
         Me.QRBtn.TabIndex = 1
+        Me.QRBtn.TabStop = False
         Me.QRBtn.Text = "Scan QR Code"
         Me.QRBtn.UseVisualStyleBackColor = False
         '
@@ -120,19 +132,9 @@ Partial Class ContactTracingForm
         Me.NextBtn.Name = "NextBtn"
         Me.NextBtn.Size = New System.Drawing.Size(75, 26)
         Me.NextBtn.TabIndex = 0
+        Me.NextBtn.TabStop = False
         Me.NextBtn.Text = "Next"
         Me.NextBtn.UseVisualStyleBackColor = False
-        '
-        'QRLabel
-        '
-        Me.QRLabel.AutoSize = True
-        Me.QRLabel.BackColor = System.Drawing.Color.Transparent
-        Me.QRLabel.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.QRLabel.Location = New System.Drawing.Point(510, 319)
-        Me.QRLabel.Name = "QRLabel"
-        Me.QRLabel.Size = New System.Drawing.Size(134, 13)
-        Me.QRLabel.TabIndex = 2
-        Me.QRLabel.Text = "Already have a QR Code?"
         '
         'ContactTracingForm
         '

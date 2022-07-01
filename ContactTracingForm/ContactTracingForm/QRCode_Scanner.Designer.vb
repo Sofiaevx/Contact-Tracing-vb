@@ -22,22 +22,22 @@ Partial Class QRCode_Scanner
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.QRScanner = New System.Windows.Forms.PictureBox()
         Me.ScanBtn = New System.Windows.Forms.Button()
         Me.HomeBtn = New System.Windows.Forms.Button()
         Me.CTlabel = New System.Windows.Forms.Label()
         Me.QRLabel = New System.Windows.Forms.Label()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.QRScanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
-        'PictureBox1
+        'QRScanner
         '
-        Me.PictureBox1.BackColor = System.Drawing.Color.White
-        Me.PictureBox1.Location = New System.Drawing.Point(29, 83)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(241, 213)
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        Me.QRScanner.BackColor = System.Drawing.Color.White
+        Me.QRScanner.Location = New System.Drawing.Point(29, 83)
+        Me.QRScanner.Name = "QRScanner"
+        Me.QRScanner.Size = New System.Drawing.Size(241, 213)
+        Me.QRScanner.TabIndex = 0
+        Me.QRScanner.TabStop = False
         '
         'ScanBtn
         '
@@ -47,6 +47,7 @@ Partial Class QRCode_Scanner
         Me.ScanBtn.Name = "ScanBtn"
         Me.ScanBtn.Size = New System.Drawing.Size(86, 34)
         Me.ScanBtn.TabIndex = 2
+        Me.ScanBtn.TabStop = False
         Me.ScanBtn.Text = "Scan"
         Me.ScanBtn.UseVisualStyleBackColor = False
         '
@@ -58,6 +59,7 @@ Partial Class QRCode_Scanner
         Me.HomeBtn.Name = "HomeBtn"
         Me.HomeBtn.Size = New System.Drawing.Size(75, 27)
         Me.HomeBtn.TabIndex = 3
+        Me.HomeBtn.TabStop = False
         Me.HomeBtn.Text = "Home"
         Me.HomeBtn.UseVisualStyleBackColor = False
         '
@@ -90,21 +92,25 @@ Partial Class QRCode_Scanner
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaptionText
-        Me.ClientSize = New System.Drawing.Size(299, 450)
+        Me.ClientSize = New System.Drawing.Size(299, 404)
         Me.Controls.Add(Me.QRLabel)
         Me.Controls.Add(Me.CTlabel)
         Me.Controls.Add(Me.HomeBtn)
         Me.Controls.Add(Me.ScanBtn)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.QRScanner)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "QRCode_Scanner"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "QRCode_Scanner"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.QRScanner, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
-    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents QRScanner As PictureBox
     Friend WithEvents ScanBtn As Button
     Friend WithEvents HomeBtn As Button
     Friend WithEvents CTlabel As Label
