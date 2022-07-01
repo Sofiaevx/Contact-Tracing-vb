@@ -78,7 +78,6 @@ Public Class Questioner
     Private Sub Questioner_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If condition Then
             Dim result As String() = output.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
-
             LNTextbox.Text = result(0)
             FNTextbox.Text = result(1)
             MNTextbox.Text = result(2)
@@ -86,7 +85,6 @@ Public Class Questioner
             CNTextbox.Text = result(4)
             AddressTextbox.Text = result(5)
             EmailTextbox.Text = result(6)
-
         End If
     End Sub
 End Class
