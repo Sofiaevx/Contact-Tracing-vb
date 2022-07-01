@@ -1,14 +1,34 @@
-﻿Fullname: asd, dsf g.
-Age: 
+﻿********************************************
+
+Fullname: Villanueva, Sofia Ruth Estrada.
+Age: 23
 Sex: Female
-Birthday: 10/06/2022 4:30:24 pm
-Contact Number: 
-Address: 
-Email: 
+Birthday: 08/05/1999 6:20:43 pm
+Contact Number: 09123456789
+Address: 1234 maganda st. sampaloc manila
+Email: abcde@gmail.com
+
 Fever: Yes
 Coughs: Yes
 Sore Throat: Yes
 Headache: Yes
 Were you previously exposed to a known positive COVID-19 person? Yes
-Date: 10/06/2022 4:30:24 pm
-Previously exposed to whom? qwerty, asas dada
+Date: 01/06/2022 6:20:43 pm
+Previously exposed to whom? Dela cruz, Juan J
+********************************************
+
+Fullname: Dela Cruz, Juan  J.
+Age: 23
+Sex: Female
+Birthday: 01/01/2022 6:24:59 pm
+Contact Number: 09876543219
+Address: 123 Maganda St. Q.C
+Email: Abcde@gmail.com
+
+Fever: Yes
+Coughs: Yes
+Sore Throat: Yes
+Headache: Yes
+Were you previously exposed to a known positive COVID-19 person? Yes
+Date: 08/06/2022 6:24:59 pm
+Previously exposed to whom? Maria, Maria S

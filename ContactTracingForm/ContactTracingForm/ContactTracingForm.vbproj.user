@@ -4,6 +4,9 @@
     <Compile Update="ContactTracingForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="QRCode_Scanner.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Questioner.vb">
       <SubType>Form</SubType>
     </Compile>

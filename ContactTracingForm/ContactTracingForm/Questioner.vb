@@ -25,7 +25,7 @@ Public Class Questioner
             InfoTxtFile.WriteLine(Question3Label.Text + " " + Q3LNTextbox.Text + ", " + Q3FNTextbox.Text + " " + Q3MNTextbox.Text)
         End If
         InfoTxtFile.Close()
-        MessageBox.Show("Submitted!!")
+        MessageBox.Show("Thank you for your response!!")
     End Sub
 
 

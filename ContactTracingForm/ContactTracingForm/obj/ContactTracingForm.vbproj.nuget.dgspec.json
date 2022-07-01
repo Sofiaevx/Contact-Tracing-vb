@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jv Cataquiz\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj": {}
+    "C:\\Users\\jvcat\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj": {}
   },
   "projects": {
-    "C:\\Users\\Jv Cataquiz\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj": {
+    "C:\\Users\\jvcat\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jv Cataquiz\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj",
+        "projectUniqueName": "C:\\Users\\jvcat\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj",
         "projectName": "ContactTracingForm",
-        "projectPath": "C:\\Users\\Jv Cataquiz\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj",
-        "packagesPath": "C:\\Users\\Jv Cataquiz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jv Cataquiz\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\obj\\",
+        "projectPath": "C:\\Users\\jvcat\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\ContactTracingForm.vbproj",
+        "packagesPath": "C:\\Users\\jvcat\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\jvcat\\srevx\\Contact Tracing\\ContactTracing\\ContactTracingForm\\ContactTracingForm\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Jv Cataquiz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\jvcat\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +57,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
         }
       }
     }

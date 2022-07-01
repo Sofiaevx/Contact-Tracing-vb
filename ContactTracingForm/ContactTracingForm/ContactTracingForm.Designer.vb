@@ -29,6 +29,7 @@ Partial Class ContactTracingForm
         Me.Info4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.NextBtn = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
@@ -91,11 +92,21 @@ Partial Class ContactTracingForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.NextBtn)
         Me.Panel1.Location = New System.Drawing.Point(24, 22)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(740, 332)
         Me.Panel1.TabIndex = 5
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(550, 297)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 23)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Scan QR Code"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'NextBtn
         '
@@ -140,4 +151,5 @@ Partial Class ContactTracingForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents NextBtn As Button
+    Friend WithEvents Button1 As Button
 End Class

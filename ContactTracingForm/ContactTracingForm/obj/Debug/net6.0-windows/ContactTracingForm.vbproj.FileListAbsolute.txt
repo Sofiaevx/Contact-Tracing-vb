@@ -17,3 +17,23 @@ C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\Con
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ref\ContactTracingForm.dll
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Resources.resources
 C:\Users\Jv Cataquiz\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Questioner.resources
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.exe
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.deps.json
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.runtimeconfig.json
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.dll
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\ContactTracingForm.pdb
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.AssemblyReference.cache
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.ContactTracingForm.resources
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Resources.resources
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.QRCode_Scanner.resources
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.Questioner.resources
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.GenerateResource.cache
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.AssemblyInfoInputs.cache
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.AssemblyInfo.vb
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.CoreCompileInputs.cache
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.dll
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\refint\ContactTracingForm.dll
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.pdb
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.genruntimeconfig.cache
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ref\ContactTracingForm.dll
