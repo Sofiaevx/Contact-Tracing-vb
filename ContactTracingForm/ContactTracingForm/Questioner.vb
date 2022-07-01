@@ -80,6 +80,12 @@ Public Class Questioner
             Dim result As String() = output.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
 
             LNTextbox.Text = result(0)
+            FNTextbox.Text = result(1)
+            MNTextbox.Text = result(2)
+            AgeTextbox.Text = result(3)
+            CNTextbox.Text = result(4)
+            AddressTextbox.Text = result(5)
+            EmailTextbox.Text = result(6)
 
         End If
     End Sub
