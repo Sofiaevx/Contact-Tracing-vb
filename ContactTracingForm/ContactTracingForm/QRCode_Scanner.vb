@@ -5,7 +5,8 @@ Imports System.Drawing
 Imports AForge.Video.DirectShow
 Imports System.IO
 Imports AForge
-
+Imports ZXing
+Imports ZXing.Aztec
 
 
 
@@ -27,10 +28,31 @@ Public Class QRCode_Scanner
             qrcodescanner = cameraDisplay.VideoDevice
             AddHandler qrcodescanner.NewFrame, New NewFrameEventHandler(AddressOf CaptureDisplay)
             qrcodescanner.Start()
+            Timer.Start()
         End If
     End Sub
     Private Sub CaptureDisplay(sender As Object, eventArgs As NewFrameEventArgs)
         bitmapscanner = DirectCast(eventArgs.Frame.Clone(), Bitmap)
         QRScanner.Image = DirectCast(eventArgs.Frame.Clone(), Bitmap)
+    End Sub
+
+    Private Sub Timer_Tick(sender As Object, e As EventArgs) Handles Timer.Tick
+        If QRScanner.Image IsNot Nothing Then
+
+            Dim qrcodescanner As BarcodeReader = New BarcodeReader()
+
+            Dim result As ZXing.Result = qrcodescanner.Decode(DirectCast(QRScanner.Image, Bitmap))
+
+            If result IsNot Nothing Then
+
+                MessageBox.Show(result.ToString())
+                'Dim question As New Questioner
+                'Timer.Stop()
+
+                'Me.Hide()
+                'question.Show()
+
+            End If
+        End If
     End Sub
 End Class

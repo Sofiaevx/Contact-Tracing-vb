@@ -22,11 +22,13 @@ Partial Class QRCode_Scanner
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Me.QRScanner = New System.Windows.Forms.PictureBox()
         Me.ScanBtn = New System.Windows.Forms.Button()
         Me.HomeBtn = New System.Windows.Forms.Button()
         Me.CTlabel = New System.Windows.Forms.Label()
         Me.QRLabel = New System.Windows.Forms.Label()
+        Me.Timer = New System.Windows.Forms.Timer(Me.components)
         CType(Me.QRScanner, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -87,6 +89,9 @@ Partial Class QRCode_Scanner
         Me.QRLabel.TabIndex = 5
         Me.QRLabel.Text = "QR Code Scanner"
         '
+        'Timer
+        '
+        '
         'QRCode_Scanner
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
@@ -115,4 +120,5 @@ Partial Class QRCode_Scanner
     Friend WithEvents HomeBtn As Button
     Friend WithEvents CTlabel As Label
     Friend WithEvents QRLabel As Label
+    Friend WithEvents Timer As Timer
 End Class

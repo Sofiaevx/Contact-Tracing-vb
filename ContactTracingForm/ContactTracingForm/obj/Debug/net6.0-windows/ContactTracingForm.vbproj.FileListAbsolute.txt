@@ -41,3 +41,4 @@ C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTr
 C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\AForge.Video.dll
 C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
 C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\obj\Debug\net6.0-windows\ContactTracingForm.vbproj.CopyComplete
+C:\Users\jvcat\srevx\Contact Tracing\ContactTracing\ContactTracingForm\ContactTracingForm\bin\Debug\net6.0-windows\zxing.dll

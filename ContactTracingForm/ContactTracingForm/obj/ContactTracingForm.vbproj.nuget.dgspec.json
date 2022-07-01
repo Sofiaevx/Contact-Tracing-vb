@@ -51,6 +51,10 @@
             "AForge.Video.DirectShow": {
               "target": "Package",
               "version": "[2.2.5, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.6.0, )"
             }
           },
           "imports": [
