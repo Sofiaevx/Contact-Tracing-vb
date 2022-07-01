@@ -91,6 +91,7 @@ Partial Class QRCode_Scanner
         '
         'Timer
         '
+        Me.Timer.Interval = 1000
         '
         'QRCode_Scanner
         '

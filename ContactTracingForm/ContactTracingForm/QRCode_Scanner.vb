@@ -45,12 +45,12 @@ Public Class QRCode_Scanner
 
             If result IsNot Nothing Then
 
-                MessageBox.Show(result.ToString())
-                'Dim question As New Questioner
-                'Timer.Stop()
-
-                'Me.Hide()
-                'question.Show()
+                Dim question As New Questioner
+                question.output = result.ToString()
+                question.condition = True
+                Timer.Stop()
+                Me.Hide()
+                question.Show()
 
             End If
         End If

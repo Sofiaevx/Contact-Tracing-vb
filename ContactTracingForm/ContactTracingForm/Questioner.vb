@@ -1,5 +1,7 @@
 ﻿Imports System.IO
 Public Class Questioner
+    Public Property output As String
+    Public Property condition As Boolean
     Dim InfoTxtFile As StreamWriter = My.Computer.FileSystem.OpenTextFileWriter("Information.txt", True)
     Private Sub SubmitBtn_Click(sender As Object, e As EventArgs) Handles SubmitBtn.Click
         'This block of codes is the user's personal information and will be added in the txtfile once the user click the submit button
@@ -73,5 +75,12 @@ Public Class Questioner
         End If
     End Sub
 
+    Private Sub Questioner_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        If condition Then
+            Dim result As String() = output.Split(",".ToCharArray(), StringSplitOptions.RemoveEmptyEntries)
 
+            LNTextbox.Text = result(0)
+
+        End If
+    End Sub
 End Class
