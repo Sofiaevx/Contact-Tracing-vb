@@ -26,7 +26,8 @@ Partial Class QRCode_Scanner
         Me.RichTextBox1 = New System.Windows.Forms.RichTextBox()
         Me.ScanBtn = New System.Windows.Forms.Button()
         Me.HomeBtn = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.CTlabel = New System.Windows.Forms.Label()
+        Me.QRLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -66,14 +67,29 @@ Partial Class QRCode_Scanner
         Me.HomeBtn.Text = "Home"
         Me.HomeBtn.UseVisualStyleBackColor = True
         '
-        'Label1
+        'CTlabel
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(94, 20)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(90, 15)
-        Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Contact Tracing"
+        Me.CTlabel.AutoSize = True
+        Me.CTlabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.CTlabel.Font = New System.Drawing.Font("Segoe UI Emoji", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.CTlabel.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.CTlabel.Location = New System.Drawing.Point(82, 14)
+        Me.CTlabel.Name = "CTlabel"
+        Me.CTlabel.Size = New System.Drawing.Size(145, 26)
+        Me.CTlabel.TabIndex = 4
+        Me.CTlabel.Text = "Contact Tracing"
+        '
+        'QRLabel
+        '
+        Me.QRLabel.AutoSize = True
+        Me.QRLabel.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.QRLabel.Font = New System.Drawing.Font("Segoe UI Emoji", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.QRLabel.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.QRLabel.Location = New System.Drawing.Point(75, 40)
+        Me.QRLabel.Name = "QRLabel"
+        Me.QRLabel.Size = New System.Drawing.Size(159, 26)
+        Me.QRLabel.TabIndex = 5
+        Me.QRLabel.Text = "QR Code Scanner"
         '
         'QRCode_Scanner
         '
@@ -81,7 +97,8 @@ Partial Class QRCode_Scanner
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.QRLabel)
+        Me.Controls.Add(Me.CTlabel)
         Me.Controls.Add(Me.HomeBtn)
         Me.Controls.Add(Me.ScanBtn)
         Me.Controls.Add(Me.RichTextBox1)
@@ -98,5 +115,6 @@ Partial Class QRCode_Scanner
     Friend WithEvents RichTextBox1 As RichTextBox
     Friend WithEvents ScanBtn As Button
     Friend WithEvents HomeBtn As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents CTlabel As Label
+    Friend WithEvents QRLabel As Label
 End Class
