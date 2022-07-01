@@ -29,8 +29,9 @@ Partial Class ContactTracingForm
         Me.Info4 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.QRBtn = New System.Windows.Forms.Button()
         Me.NextBtn = New System.Windows.Forms.Button()
+        Me.QRLabel = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -92,21 +93,24 @@ Partial Class ContactTracingForm
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.White
-        Me.Panel1.Controls.Add(Me.Button1)
+        Me.Panel1.Controls.Add(Me.QRLabel)
+        Me.Panel1.Controls.Add(Me.QRBtn)
         Me.Panel1.Controls.Add(Me.NextBtn)
         Me.Panel1.Location = New System.Drawing.Point(24, 22)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(740, 332)
         Me.Panel1.TabIndex = 5
         '
-        'Button1
+        'QRBtn
         '
-        Me.Button1.Location = New System.Drawing.Point(550, 297)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 23)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Scan QR Code"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.QRBtn.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.QRBtn.Font = New System.Drawing.Font("Segoe UI Emoji", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.QRBtn.Location = New System.Drawing.Point(550, 294)
+        Me.QRBtn.Name = "QRBtn"
+        Me.QRBtn.Size = New System.Drawing.Size(94, 26)
+        Me.QRBtn.TabIndex = 1
+        Me.QRBtn.Text = "Scan QR Code"
+        Me.QRBtn.UseVisualStyleBackColor = False
         '
         'NextBtn
         '
@@ -118,6 +122,17 @@ Partial Class ContactTracingForm
         Me.NextBtn.TabIndex = 0
         Me.NextBtn.Text = "Next"
         Me.NextBtn.UseVisualStyleBackColor = False
+        '
+        'QRLabel
+        '
+        Me.QRLabel.AutoSize = True
+        Me.QRLabel.BackColor = System.Drawing.Color.Transparent
+        Me.QRLabel.Font = New System.Drawing.Font("Segoe UI", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.QRLabel.Location = New System.Drawing.Point(510, 319)
+        Me.QRLabel.Name = "QRLabel"
+        Me.QRLabel.Size = New System.Drawing.Size(134, 13)
+        Me.QRLabel.TabIndex = 2
+        Me.QRLabel.Text = "Already have a QR Code?"
         '
         'ContactTracingForm
         '
@@ -139,6 +154,7 @@ Partial Class ContactTracingForm
         Me.Text = "Contact Tracing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Panel1.ResumeLayout(False)
+        Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -151,5 +167,6 @@ Partial Class ContactTracingForm
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Panel1 As Panel
     Friend WithEvents NextBtn As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents QRBtn As Button
+    Friend WithEvents QRLabel As Label
 End Class
